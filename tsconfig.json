@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "baseUrl": "src",
+    "sourceMap": false,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "paths": {
+      "@ngsuit": [
+        "library"
+      ],
+      "@ngentry/*": [
+        "app/entry/*"
+      ],
+      "@appassemble": [
+        "app/entry/assemble"
+      ],
+      "RootLayout/*": [
+        "app/RootLayout/_ng/*"
+      ],
+      "Blog/*": [
+        "app/Blog/_ng/*"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.processor-container {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+div.progress {
+    margin-top: -16px;
+    text-align: center;
+    display: block !important;
+}
+
+.processor-console {
+    width: 100%;
+    max-height: 800px;
+    overflow-y: scroll;
+}
+
+.error {
+    color: red !important;
+}
+
+.info {
+    color: lime !important;
+}
+
+.warn {
+    color: yellow !important;
+}
+
+.system {
+    color: #ff3388 !important;
+}
+
+.console {
+    font-size: 14px;
+    background: #000;
+    color: #ccc;
+    display: block;
+    padding: 20px 0 0 5px;
+    margin: -20px 0 0 0;
+}

@@ -1,0 +1,9 @@
+// How to use
+// put GLOBAL_ROUTEDEFS to your layout.module.ts file
+//  
+// @NgModule({
+//     imports: GLOBAL_ROUTEDEFS,
+//     exports: [RouterModule]
+// })
+
+import { Routes, RouterModule } from '@angular/router';

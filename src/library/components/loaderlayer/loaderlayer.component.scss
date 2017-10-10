@@ -1,0 +1,29 @@
+:host {
+    .loading-mask {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .loading-mask,
+    .loading-mask .loader>img {
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 100;
+    }
+    .text-container {
+        position: fixed;
+        top: 50%;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        div:last-child {
+            color: red;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+    }
+}

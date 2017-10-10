@@ -1,0 +1,9 @@
+<div class="loading-mask" *ngIf="loading">
+    <div class="loader">
+        <img alt="Loading..." [src]="asset('/assets/images/loader.gif')" />
+        <div class="text-container">
+            <div>{{controlMsg.tip}}</div>
+            <div>{{controlMsg.error}}</div>
+        </div>
+    </div>
+</div>

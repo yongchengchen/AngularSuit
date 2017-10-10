@@ -1,0 +1,28 @@
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h3 class="modal-title">Async Proccess Console</h3>
+    </div>
+    <div class="modal-body common-modal-dialog">
+        <div class="processor-container">
+            <p>
+                <ngb-progressbar type="success" [value]="i" [striped]="true" [animated]="true" [max]="total"></ngb-progressbar>
+            </p>
+            <div class="progress">Process <b>{{i}} of {{total}}</b></div>
+        </div>
+
+        <div>
+            <button class="btn btn-info" *ngIf="bCanStart" (click)="pauseOrResume()">{{buttonTitle}}</button>
+            <button class="btn btn-info" *ngIf="bCanRetry" (click)="retry()">Retry</button>
+            <button class="btn btn-info" *ngIf="bCanLoadResult" (click)="loadResult()">Load Result Anyway</button>
+        </div>
+        <br/>
+
+        <div class='processor-console'>
+            <span *ngFor="let item of logs" class="console {{item.level}}">{{ item.info }}</span>
+        </div>
+    </div>
+    <div class="modal-footer close_btn">
+        <button class="btn btn-warning" type="button" data-dismiss="modal" *ngIf="bCanClose">Close</button>
+    </div>
+
+</ng-template>
